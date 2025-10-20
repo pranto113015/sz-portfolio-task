@@ -10,12 +10,12 @@
   --background-color: #eeeff1;
 }
 
-html{
- scroll-behavior: smooth;
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   background-color: var(--background-color);
 }
 
@@ -23,3 +23,40 @@ a {
   color: var(--link-color);
   text-decoration: none;
 }
+
+/* Navbar */
+/* padding x axis 50px and y axis 0px */
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 50px;
+  height: 80px;
+  align-items: center;
+}
+
+nav .left a {
+  color: var(--text-color);
+  font-size: 22px;
+  font-weight: 600;
+}
+
+
+/* margin x axis 10px and y axis 0 */
+nav .right a {
+  color: var(--text-color);
+  margin: 0px 10px;
+}  
+
+nav .right a:last-child {
+  color: var(--background-color);
+  background-color: var(--text-color);
+  padding: 5px 15px;
+  border-radius: 5px;
+}
+
+nav .right a span {
+  margin-left: 5px;
+}
+
+
+
