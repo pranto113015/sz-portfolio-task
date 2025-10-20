@@ -45,7 +45,7 @@ nav .left a {
 nav .right a {
   color: var(--text-color);
   margin: 0px 10px;
-}  
+}
 
 nav .right a:last-child {
   color: var(--background-color);
@@ -60,3 +60,23 @@ nav .right a span {
 
 
 
+@media (max-width: 600px) {
+  nav {
+    padding: 0 20px;
+  }
+
+  nav .right a {
+    font-size: 22px;
+  }
+
+  nav .right a:last-child {
+    color: var(--text-color);
+    background: transparent;
+    padding: 0;
+  }
+
+  nav .right a span {
+    display: none;
+  }
+
+}
