@@ -17,6 +17,9 @@ html {
 body {
   font-family: "Poppins", sans-serif;
   background-color: var(--background-color);
+  max-width: 1488px;
+  margin: 0 auto;
+
 }
 
 a {
@@ -224,4 +227,133 @@ nav .right a span {
   .skills-section .cells .cell span {
     font-size: 16px;
   }
+}
+
+
+.testimony-section {
+  padding: 0 50px;
+  margin-bottom: 30px;
+}
+
+.testimony-section h2 {
+  font-size: 35px;
+  text-align: center;
+}
+
+.testimony-section .group {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.testimony-section .group .persion-details {
+  text-align: center;
+  flex: 2;
+}
+
+.testimony-section .group .testimony-text {
+  flex: 8;
+}
+
+.testimony-section .group .persion-details img {
+  width: 200px;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.testimony-section .group .persion-details p {
+  font-weight: 600;
+}
+
+.testimony-section .group .persion-details p:last-child {
+  font-weight: normal;
+}
+
+@media (max-width: 740px) {
+  .testimony-section {
+    text-align: center;
+  }
+
+  .testimony-section .group {
+    flex-direction: column;
+  }
+}
+
+
+.contact-section {
+  padding: 0 50px;
+  margin-bottom: 100px;
+}
+
+.contact-section h2 {
+  font-size: 35px;
+  text-align: center;
+
+}
+
+.contact-section .group {
+  display: flex;
+  gap: 50px;
+}
+
+.contact-section .group .text {
+  flex: 3;
+  margin-top: 20px;
+}
+
+.contact-section .group form {
+  flex: 3;
+  display: flex;
+  margin-top: 20px;
+  flex-direction: column;
+}
+
+
+
+.contact-section .group form input,
+.contact-section .group form textarea {
+  font-family: 'Poppins', sans-serif;
+  border: 2px solid var(--link-color);
+  background-color: transparent;
+  padding: 10px;
+  margin-bottom: 15px;
+  outline: none;
+  resize: none;
+}
+
+
+.contact-section .group form button {
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  background-color: var(--link-color);
+  border: none;
+  cursor: pointer;
+  height: 50px;
+  transition: .1s;
+}
+
+.contact-section .group form button:hover {
+  filter: brightness(.9);
+}
+
+
+@media (max-width: 740px) {
+  .contact-section .group {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 600px) {
+  .contact-section {
+    padding: 0 20px;
+  }
+}
+
+footer p {
+  text-align: center;
+  padding: 20px 0;
+
 }
